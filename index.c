@@ -35,53 +35,53 @@ char* answer10 = "-";
 
 // The code begins here. 
 
-struct quiz{ 
+typedef struct{ 
     char* question;
     char* answer;
     char* answerPossible; // If a question has two possible ways to type the answer.
-};
+} quiz;
 int points; 
 
 int main() {
-    struct quiz question1; 
+    quiz question1; 
     question1.question = "1. Who painted the Mona Lisa?"; 
     question1.answer = "Leonardo de Vinci";
 
-    struct quiz question2; 
+    quiz question2; 
     question2.question = "2. Which country is the largest in the world?"; 
     question2.answer = "Russia";
 
-    struct quiz question3; 
+    quiz question3; 
     question3.question = "3. What is an eight-sided shape called?"; 
     question3.answer = "Octagon";
 
-    struct quiz question4; 
+    quiz question4; 
     question4.question = "4. What is the word for a person who can write with both hands?"; 
     question4.answer = "Ambidextrous";
 
-    struct quiz question5; 
+    quiz question5; 
     question5.question = "5. How many degrees are in a circle?"; 
     question5.answer = "360";
 
-    struct quiz question6; 
+    quiz question6; 
     question6.question = "6. What is the largest bone in the human body?"; 
     question6.answer = "Femur";
 
-    struct quiz question7; 
+    quiz question7; 
     question7.question = "7. How many colors are in a rainbow?"; 
     question7.answer = "7";
     question7.answerPossible = "Seven";
 
-    struct quiz question8; 
+    quiz question8; 
     question8.question = "8. What is the national animal of Scotland?"; 
     question8.answer = "Unicorn";
 
-    struct quiz question9; 
+    quiz question9; 
     question9.question = "9. How many letters are in the alphabet?"; 
     question9.answer = "26";
     question9.answerPossible = "Twenty six";
     
-    struct quiz question10; 
+    quiz question10; 
     question10.question = "10. Which is the most populous country?"; 
     question10.answer = "India";
 
@@ -94,7 +94,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer1);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question1.answer);
+        printf("\n\nThe correct answer is %s.", question1.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -107,7 +107,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer2);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question2.answer);
+        printf("\n\nThe correct answer is %s.", question2.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -120,7 +120,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer3);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question3.answer);
+        printf("\n\nThe correct answer is %s.", question3.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -133,7 +133,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer4);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question4.answer);
+        printf("\n\nThe correct answer is %s.", question4.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -146,7 +146,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer5);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question5.answer);
+        printf("\n\nThe correct answer is %s.", question5.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -159,7 +159,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer6);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question6.answer);
+        printf("\n\nThe correct answer is %s.", question6.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -172,7 +172,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer7);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question7.answer);
+        printf("\n\nThe correct answer is %s.", question7.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -185,7 +185,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer8);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question8.answer);
+        printf("\n\nThe correct answer is %s.", question8.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -198,7 +198,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer9);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question9.answer);
+        printf("\n\nThe correct answer is %s.", question9.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
@@ -211,7 +211,7 @@ int main() {
     } else {
         printf("\nYou answered: %s.", answer10);
         printf("\nThat is incorrect.");
-        printf("\n\nThe correct answer is %d.", question10.answer);
+        printf("\n\nThe correct answer is %s.", question10.answer);
         points--;
         printf("\n\nYou have %d points.", points);
     }; 
